@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang ="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML Multimedia Technical Documentation Page">
+    <title>HTML Media</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro">
+  </head>
+  <body>
+    <nav id="navbar">
+        <header class="menu">HTML Multimedia</header>
+        <ul>
+          <li><a class="nav-link" href="#HTML_Media">HTML Media</a></li>
+          <li><a class="nav-link" href="#HTML_Video">HTML Video</a></li>
+          <li><a class="nav-link" href="#HTML_Audio">HTML Audio</a></li>
+          <li><a class="nav-link" href="#HTML_Plug-ins">HTML Plug-ins</a></li>
+          <li><a class="nav-link" href="#HTML_YouTube">HTML YouTube</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="HTML_Media" >
+        <header>HTML Media</header> 
+        <p class="note">Multimedia on the web is sound, music, videos, movies, and animations.</p>
+        <h2>What is Multimedia?</h2>
+        <p>Multimedia comes in many different formats. It can be almost anything you can hear or see, like images, music, sound, videos, records, films, animations, and more. Web pages often contain multimedia elements of different types and formats.</p>
+        <h2>Browser Support</h2>
+        <p>The first web browsers had support for text only, limited to a single font in a single color. Later came browsers with support for colors, fonts, images, and multimedia!</p>
+        <h2>Multimedia Formats</h2>
+        <p>Multimedia elements (like audio or video) are stored in media files.The most common way to discover the type of a file, is to look at the file extension.Multimedia files have formats and different extensions like: .wav, .mp3, .mp4, .mpg, .wmv, and .avi.</p>
+        <p class="note">Only MP4, WebM, and Ogg video are supported by the HTML standard.</p>
+      </section>
+      <section class="main-section" id="HTML_Video">
+        <header>HTML Video</header>
+        <p>The HTML <code>&lt;video&gt;</code> element is used to show a video on a web page.</p>
+        <h3>Example</h3>
+        <div class="code-example">
+          <code>
+            &lt;video width="320" height="240" controls&gt;
+            <br>
+            &lt;source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4"&gt;
+            <br>
+            &lt;source src="movie.ogg" type="https://www.w3schools.com/html/mov_bbb.ogg"&gt;
+            <br>
+            Your browser does not support the video tag.
+            <br>
+            &lt;/video&gt;
+          </code>
+        </div>
+        <video width="320" height="240" controls><source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4"></video>
+      </section>
+      <h2>How it Works</h2>
+      <p>The controls attribute adds video controls, like play, pause, and volume. It is a good idea to always include width and height attributes. If height and width are not set, the page might flicker while the video loads. The<code>&lt;source&gt;</code> element allows you to specify alternative video files which the browser may choose from. The browser will use the first recognized format. The text between the <code class="code-elt"> &lt;video&gt;</code> and <code class="code-elt"> &lt;/video&gt;</code> tags will only be displayed in browsers that do not support the <code> &lt;video&gt;</code> element.</li>
+      </p>
+      <p class="note">To start a video automatically, use the <strong>autoplay</strong> attribute. Chromium browsers do not allow autoplay in most cases. However, muted autoplay is always allowed.</p>
+      <h2>HTML Video Formats</h2>
+      <p>There are three supported video formats: MP4, WebM, and Ogg.</p>
+      <table>
+      <caption>HTML Video Tags</caption>
+      <tr>
+        <th>Tags</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td><code>&lt;video&gt;</code></td>
+        <td>Defines a video or movie</td>
+      </tr> 
+      <tr>
+        <td><code>&lt;source&gt;</code></td>
+        <td>Defines multiple media resources for media elements</td>
+      </tr>
+        <td><code>&lt;track&gt;</code></td>
+        <td>Defines text tracks in media players</td> 
+      </tr>  
+      </table>
+      <section class="main-section" id="HTML_Audio">
+        <header>HTML Audio</header>
+        <p>The HTML <code class="code-elt">&lt;audio&gt;</code> element is used to play an audio file on a web page.</p>
+        <h3>Example</h3>
+        <div class="code-example">
+          <code>
+            &lt;audio controls&gt;
+            &lt;source src="https://www.w3schools.com/html/horse.ogg" type="audio/ogg" &gt;
+            &lt;source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg" &gt;
+            Your browser does not support the audio element.
+            &lt;/audio &gt;
+          </code>
+        </div>
+        <h2>How It Works</h2>
+        <p>The controls attribute adds audio controls, like play, pause, and volume. The &lt;source&gt; element allows you to specify alternative audio files which the browser may choose from. The browser will use the first recognized format. The text between the &lt;audio&gt; and &lt;/audio&gt; tags will only be displayed in browsers that do not support the &lt;audio&gt; element.</p>
+        <p class="note">To start an audio file automatically, use the <strong>autoplay</strong> attribute. Chromium browsers do not allow autoplay in most cases. However, muted autoplay is always allowed.</p>
+        <h2>HTML Audio Formats</h2>
+        <p>There are three supported audio formats: MP3, WAV, and OGG.</p>
+        <table>
+          <caption>HTML Audio Tags</caption>
+          <tr>
+            <th>Tag</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td><code>&lt;audio&gt;</code></td>
+            <td>Defines sound content.</td>
+          </tr>
+          <tr>
+            <td><code>&lt;source&gt;</code></td>
+            <td>Defines multiple media resources for media elements, such as &lt;video&gt; and &lt;audio&gt;</td>
+          </tr>
+        </table>
+      </section>
+      <section class="main-section" id="HTML_Plug-ins">
+        <header>HTML Plug-ins</header>
+        <p>Plug-ins are computer programs that extend the standard functionality of the browser.</p>
+        <p>Plug-ins were designed to be used for many different purposes:</p>
+        <br>
+        <ul class="content">
+          <li>To run Java applets</li>
+          <li>To run Microsoft ActiveX controls</li>
+          <li>To display Flash movies</li>
+          <li>To display maps</li>
+          <li>To scan for viruses</li>
+          <li>To verify a bank id</li>
+        </ul>
+        <p class="warning"><b>Warning !</b> Most browsers no longer support Java Applets and Plug-ins. ActiveX controls are no longer supported in any browsers. The support for Shockwave Flash has also been turned off in modern browsers.</p>
+        <h2>The <code class="code-elt">&lt;object&gt;</code> Element</h2>
+        <p>The <code class="code-elt">&lt;object&gt;</code> element is supported by all browsers. It defines an embedded object within an HTML document.</p>
+        <h3>Example</h3>
+            <div class="code-example">
+              <code>
+                &lt;object data="audi.jpeg"&gt;&lt;/object&gt;
+              </code>
+            </div>
+        <h2>The <code>&lt;embed&gt;</code> Element</h2> 
+        <p>The <code>&lt;embed&gt;</code>element is supported in all major browsers. It also defines an embedded object within an HTML document.</p>
+        <h3>Example</h3>
+        <div class="code-example">
+          <code>&lt;embed src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-b-4_ARUtc0DxqzuduzJx83l4fwjnhD2Wlg&usqp=CAU"&gt;</code>
+        </div>
+        <p class="note">Web browsers have supported the <code>&lt;embed&gt;</code> element for a long time. However, it has not been a part of the HTML specification before HTML5.</p>        
+      </section>
+      <section class="main-section" id="HTML_YouTube">
+        <header>HTML Youtube</header>
+        <p>The easiest way to play videos in HTML, is to use YouTube.</p>
+        <h3>Example</h3>
+        <div class="code-example">
+          <code>&lt;iframe width="420" height="315" src="https://www.youtube.com/embed/5b1h4WzOUgc?autoplay=1&mute=1" title="YouTube video player&gt; &lt;iframe&gt;</code>
+        </div> 
+        <h2>Playing a YouTube Video in HTML</h2>
+        <ul class="content">
+          <li>Upload the video to YouTube</li>
+          <li>Take a note of the video id</li>
+          <li>Define an &lt;iframe&gt; element in your web page</li>
+          <li>Let the <b>src</b> attribute point to the video URL</li>
+          <li>Use the <b>width</b> and <b>height</b> attributes to specify the dimension of the player</li>
+          <li>Add any other parameters to the URL</li>
+        </ul>
+        <h3>Example</h3>
+        <div class="code-example">
+          <code>&lt;iframe width="420" height="315" src="https://www.youtube.com/embed/5b1h4WzOUgc?autoplay=1&mute=1" title="YouTube video player&gt; &lt;iframe&gt;</code>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

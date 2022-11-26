@@ -1,0 +1,152 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html, body {
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #e8ebe2;
+}
+
+h2 {
+  font-size: 1.3em;
+ }
+
+h2, h3 {
+  margin: 10px 0px;
+}
+
+p.note, p.warning, div.code-example {
+  background-color:rgb(214, 246, 219);
+  padding: 10px;
+  border: solid 3px white; 
+  border-radius: 5px;
+  position: relative;
+  font-family: 'Crimson Pro', sans-serif;
+  font-size: 1.2em;
+  margin: 15px auto;
+}
+
+p.warning {
+  background-color:rgb(243, 181, 181)
+}
+
+div.code-example {
+  background-color: white;
+  overflow: auto;
+}
+
+header {
+  font-size: 2em;
+  font-weight: bold;
+  color: rgb(121, 28, 28);
+  margin: 10px 0px;
+}
+
+header.menu {
+  padding: 20px;
+  border-bottom: solid rgba(6, 125, 44, 0.4);
+  margin: auto;
+}
+
+header.menu, a.nav-link {
+  font-size: 1.5em;
+  color: black;
+} 
+
+a.nav-link {
+  padding: 10px 5px 25px 5px;
+}
+
+#navbar {
+  position: fixed;
+  min-width: 290px;
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 100%;
+  border: solid rgba(6, 125, 44, 0.4);
+}
+
+li {
+  list-style: none;
+  position: relative;
+}
+
+#navbar a {
+  display: block;
+  padding: 10px 30px;
+  color: #4d4e53;
+  text-decoration: none;
+  cursor: pointer;
+ 
+}
+
+#navbar ul li {
+  border-bottom: solid rgba(6, 125, 44, 0.4); 
+}
+
+#navbar ul li:last-child {
+  border-bottom: none;
+}
+
+ul.content {
+  margin-left: 20px;
+}
+
+#main-doc {
+ position: absolute;
+ margin-left: 310px;
+ padding: 10px;
+ margin-bottom: 50px;
+}
+
+table, th, td {
+  border:1px solid black;
+ 
+}
+
+table {
+  width: 100%;
+  max-width: 700px;
+}
+
+caption {
+  font-size: 1.3em;
+  font-weight: bold;
+  text-align: left;
+  margin: 10px 0px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    header {
+      font-size: 1.7em;
+      margin: 8px 0px;
+    }
+    
+    header.menu {
+      padding: 10px;
+    }
+    
+    header.menu, a.nav-link {
+      font-size: 1.3em;
+    } 
+    
+    #navbar {
+      min-width: 120px;
+      width: 130px;
+    }
+
+    ul.content {
+      margin: auto;
+    }
+
+    #main-doc {
+      position: relative;
+      margin-left: 130px;
+     }
+}
